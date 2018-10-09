@@ -34,7 +34,7 @@ func main() {
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 
-	e.Static("/gen", "gen")
+	e.Static("/gen", "nuxt/dist")
 
 	// サーバー起動
 	e.Start(":" + config.Server.Port)

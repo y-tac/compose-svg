@@ -1,13 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
-      <h1 class="title">
-        compose-svg
-      </h1>
-      <h2 class="subtitle">
-        docker-compose.yml to svg
-      </h2>
+      <ComposeToSVG/>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -23,11 +17,11 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import ComposeToSVG from '~/components/ComposeToSVG.vue'
 
 export default {
   components: {
-    AppLogo
+    ComposeToSVG,
   }
 }
 </script>
